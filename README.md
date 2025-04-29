@@ -94,19 +94,19 @@ To improve the GNSS positioning performance with the skymask provided, and test 
 As the skymask can identify satellite visibility blockage by providing satellite azimuth and elevation angles, the given skymask is visualized as follows, in which the obscured portion is shown in gray and the unobscured portion is shown in white:
 
 <div align="center">
-    <img src="/Figure/Task2_skymask.jpg" width="400">
+    <img src="/Figure/Task2_skymask.jpg" width="200">
 </div>
 
 In Assignment 1, the satellite for the urban dataset is decoded only 4 satellites, while at least 4 satellites are required for the GNSS positioning solution. Finding that problem, in this task, the code for assignment 1 is firstly corrected, and then decoded to 5 satellites as shown below:
 
 <div align="center">
-    <img src="/Figure/Task2_satellite_position.jpg" width="400">
+    <img src="/Figure/Task2_satellite_position.jpg" width="200">
 </div>
 
 Overlaying the decoded satellite positions with the sky mask, the satellite passes can be obtained as shown in the figure below, where the obscured satellites are shown in red and the unobscured satellites are shown in green:
 
 <div align="center">
-    <img src="/Figure/Task2_satellite_position_with_skymask.jpg" width="400">
+    <img src="/Figure/Task2_satellite_position_with_skymask.jpg" width="200">
 </div>
 
 As can be seen from the above figure, for the Urban dataset, only two satellites are unobstructed, while the other three satellites are all obstructed. As mentioned earlier, GNSS positioning solution requires at least 4 satellites, so it is not possible to eliminate these three satellites directly. Based on the above problem, the satellite weights are adjusted based on the sky mask in the weighted least squares(WLS) method, which means if the current satellite is occluded, it is multiplied by another weight on top of its original weights including **1.0, 0.8, 0.5, 0.3, 0.0**, while the unoccluded satellites retain full weight. The position results on geographic map is shown as follows:

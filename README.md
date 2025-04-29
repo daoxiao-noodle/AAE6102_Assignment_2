@@ -434,6 +434,8 @@ The following table categorizes and summarizes the principal challenges of emplo
 
 While LEO communication satellites present exciting opportunities for enhancing GNSS services — particularly in urban environments, autonomous navigation, and emergency response — significant challenges must be addressed before they can be reliably used for navigation. These challenges span orbital dynamics, signal design, synchronization complexity, environmental interference, collision risks, and regulatory constraints. Future advancements are expected to focus on hybrid constellation architectures (combining LEO, MEO, and GEO satellites), robust Doppler compensation techniques, improved onboard clock technologies, and international spectrum coordination. If these barriers are successfully overcome, LEO-based navigation could serve as a powerful complement to existing GNSS infrastructure, offering enhanced resilience, redundancy, and positioning performance.
 
+---
+
 # Task 5 – GNSS in Remote Sensing: A Focus on GNSS Interferometric Reflectometry (GNSS-IR)
 
 ## 1. Introduction
